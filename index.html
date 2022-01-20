@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table, th, td {
-          border:1px solid black;
+        table,
+        th,
+        td {
+            border: 1px solid black;
         }
-        </style>
+    </style>
+    <link rel="stylesheet" href="/style/index.css" />
 </head>
 
 <body>
     <header>
-        <img src="./assests/Screenshot from 2022-01-18 18-37-25.png" alt="" />
-        <h1>My To Do List</h1>
+        <img class="logo" src="./assests/Screenshot from 2022-01-18 18-37-25.png" alt="" />
+
         <nav>
             <ul>
                 <li> <a href="/"> Home </a> </li>
@@ -25,27 +28,40 @@
         </nav>
     </header>
     <main>
-<table>
-    <r>
-        <th>To do task</th>
-        <th> Status</th>
-    </r>
-    <tr>
-        <td> Grocery shopping</td>
-        <td>Done</td>
-    </tr>
-    <tr> 
-        <td> Studying</td>
-        <td> Done</td>
-    </tr>
-    <tr>
-        <td> Cooking</td>
-        <td> Hasn't started yet</td>
-    </tr>
-</table>
+        <h1>ToDo List</h1>
+        <table>
+            <tr>
+                <th>List</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Learn JS <span><input type="checkBox" checked></span> </td>
+                <td>
+                    <div class="state-box green"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Create HTML Page <span><input type="checkBox"></span></td>
+                <td>
+                    <div class="state-box red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Walk the dog <span><input type="checkBox"></span></td>
+                <td>
+                    <div class="state-box red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Watch the match <span><input type="checkBox"></span></td>
+                <td>
+                    <div class="state-box red"></div>
+                </td>
+            </tr>
+        </table>
     </main>
     <footer>
-<p> &copy; All rights reserved</p>
+        <p> &copy; All rights reserved</p>
     </footer>
 </body>
 

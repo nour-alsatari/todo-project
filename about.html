@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="./style/about.css">
+
 </head>
 
 <body>
     <header>
         <img src="./assests/Screenshot from 2022-01-18 18-37-25.png" alt="" />
-        <h1>My To Do List</h1>
         <nav>
             <ul>
                 <li> <a href="/"> Home </a> </li>
@@ -21,35 +21,38 @@
         </nav>
     </header>
     <main>
-<section>
-<p>Get to know me</p>
-<img src="./assests/mypic.jpg" alt="pic" />
-<p>
-    My name is Nour. Computer Information Systems graduate and a student in ASAC 
-    aspiring to be a full stack developer specializing in Javascript.
-</p>
-</section>
+        <section id="aboutMe">
+            <img src="./assests/mypic.jpg" alt="pic" />
+            <div class="overview-class">
+                <h3>Nour alsatari</h3>
+                <p class="brief">
+                    My name is Nour. Computer Information Systems graduate and a student in ASAC
+                    aspiring to be a full stack developer specializing in Javascript.
+                </p>
+            </div>
+        </section>
 
-<section>
-<p>Enter your Information</p>
-<form>
-    <label for="fname">Name:</label>
-    <input type="text" id="fname" name="fname"><br/>
-    <label for="lname">Email:</label>
-    <input type="text" id="email" name="email" ><br>
-    <label for="lname">Phone number:</label>
-    <input type="text" id="number" name="number" ><br>
-    <label for="lname">Age:</label>
-    <input type="text" id="age" name="age" ><br><br>
+        <section id="contactMe">
+            <h3>Contact me</h3>
+            <form>
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname"><br />
+                <label for="lname">Email:</label>
+                <input type="text" id="email" name="email"><br>
+                <label for="lname">Phone</label>
+                <input type="text" id="number" name="number"><br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder=""></textarea>
 
-    <input type="submit" value="Submit">
-  </form>
+                <button type="submit">Send</button>    
 
-</section>
+            </form>
+
+        </section>
 
     </main>
     <footer>
-<p> &copy; All rights reserved</p>
+        <p> &copy; All rights reserved</p>
     </footer>
 </body>
 
