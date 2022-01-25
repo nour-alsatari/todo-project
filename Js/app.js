@@ -25,36 +25,37 @@ if (welcomeMessagePrefrence)
 }
 console.log(title);
 
+// -------------------------------------------------------------------------
 // today's task
 
-let answer1 = prompt ("Do you enjoy coding?", "yes or no");
-let answer2 = prompt ("Do you spesk english?", "yes or no");
-let answer3 = prompt ("Do you like food?", "yes or no");
-let answersArray = [];
-
-function validateAnswers(){
-if (answer1 != "yes" && answer1 != "no"){
-    answer1 = "invalid";
-}
-console.log(answer1);
-
-if (answer2 != "yes" && answer2 != "no"){
-    answer2 = "invalid";
-}
-console.log(answer2);
-
-if (answer3 != "yes" && answer3 != "no"){
-    answer3 = "invalid";
-}
-console.log(answer3);
+function askQuestion(question) {
+    let answer
+    return answer = prompt(question, `"yes or no"`);
 }
 
-validateAnswers();
+let answer1 = askQuestion("Do you enjoy coding?");
+let answer2 = askQuestion("Do you spesk english?");
+let answer3 = askQuestion("Do you like food?");
 
-answersArray.push(answer1);
-answersArray.push(answer2);
-answersArray.push(answer3);
 
-for (let i = 0 ; i < answersArray.length ; i++){
-console.log(answersArray[i])
-} 
+let answersArray = [answer1, answer2, answer3];
+
+
+answersArray = validateAnswers(answersArray);
+traverse(answersArray);
+// console.log (answersArray);
+
+function validateAnswers(answersArray) {
+    for (let i = 0; i < answersArray.length; i++) {
+        if (answersArray[i] != "yes" && answersArray[i] != "no") {
+            answersArray[i] = "invalid";
+        }
+    }
+    return answersArray;
+}
+
+function traverse() {
+    for (let i = 0; i < answersArray.length; i++) {
+        console.log(answersArray[i])
+    }
+}
